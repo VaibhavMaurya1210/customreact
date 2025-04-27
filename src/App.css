@@ -1,0 +1,34 @@
+/* .animate-ping
+
+animation:var(--animate-spin);
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+/* .animate-ping
+animation: var(--animate-ping); /* ping 1s cubic-bezier(0, 0, 0.2, 1) infinite */
+
+/* @keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  } */ */
+
+
+.animate-bounce
+animation:var(--animate-bounce): /* bounce 1s infinite */
+
+@keyframes bounce {
+  %, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% 75% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
